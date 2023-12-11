@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon-128x128.png" sizes="128x128" />
+    <meta name="application-name" content="/assets/images/&nbsp;" />
+    <meta name="msapplication-TileColor" content="/assets/images/#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/assets/images/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/assets/images/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/assets/images/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/assets/images/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/assets/images/mstile-310x310.png" />
+
+    <link rel="stylesheet" href="/scss/style.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cb20626d-df53-4a65-a24c-6934ba6e2032&lang=ru_RU"
+        type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [41.334388, 69.284133],
+                zoom: 16,
+                controls: [],
+            });
+            myMap.geoObjects.add(
+                new ymaps.Placemark(
+                    [41.334388, 69.284133],
+                    {
+                        balloonContent: "<span>WW</span>",
+                    },
+                    {
+                        preset: "islands",
+                    }
+                )
+            );
+        }
+    </script>
+    <title>AuditService</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class=" header__wrapper container">
+            <div class="logo">
+                <a href="#">
+                    <img src="/assets/images/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="header__navigation">
+                <nav>
+                    <ul class="header__navigation-list">
+                        <li><a href="#" class="navigation__link">About Us</a></li>
+                        <li>
+                            <a href="#" class="navigation__link">Our Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navigation__link">Features</a>
+                        </li>
+                        <li><a href="#contacts" class="navigation__link">Contacts</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="header__right">
+                <div class="header__tel">
+                    <a href="tel:+998339598877">+998 (33) 959-88-77</a>
+                </div>
+                <div class="language">
+                    <div><a href="#">UZ</a></div>
+                </div>
+            </div>
+            <!-- <div class="hamburger">
+                <div class="hamburger__line"></div>
+            </div> -->
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home__filter">
+            <div class="container home__wrapper">
+                <div class="home__title">Lorem ipsum dolor sit amet.</div>
+                <div class="home__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, quis.</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="about__photo">
+            <img src="" alt="">
+        </div>
+        <div class="about__content">
+            <div class="about__title">About Our Company</div>
+            <div class="about__subtitle">Relevant industry keywords</div>
+            <span></span>
+            <div class="about__text">Introduce yourself, and tell a story about the company in one paragraph. Who do you work with, what inspires your services? What is your team proud of? What are your values and motto?</div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services__title">Our Services</div>
+        <div class="services__subtitle">Help your clients make a decision: highlight your strong points and come up with a good reason to work with you</div>
+        <div class="services__block">
+            <div class="services__block-photo">
+                <img src="" alt="">
+            </div>
+            <div class="services__block-text">
+                <div class="services__block-title">
+                    Our First Service
+                </div>
+                <div class="services__block-subtitle">
+                    Briefly describe your service and upload ambient photographs to draw your potential clients’ attention
+                </div>
+            </div>
+        </div>
+        <div class="services__block">
+            <div class="services__block-text">
+                <div class="services__block-title">
+                    Our First Service
+                </div>
+                <div class="services__block-subtitle">
+                    Briefly describe your service and upload ambient photographs to draw your potential clients’ attention
+                </div>
+            </div>
+            <div class="services__block-photo">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="services__block">
+            <div class="services__block-photo">
+                <img src="" alt="">
+            </div>
+            <div class="services__block-text">
+                <div class="services__block-title">
+                    Our First Service
+                </div>
+                <div class="services__block-subtitle">
+                    Briefly describe your service and upload ambient photographs to draw your potential clients’ attention
+                </div>
+            </div>
+        </div>
+        <div class="services__block">
+            <div class="services__block-text">
+                <div class="services__block-title">
+                    Our First Service
+                </div>
+                <div class="services__block-subtitle">
+                    Briefly describe your service and upload ambient photographs to draw your potential clients’ attention
+                </div>
+            </div>
+            <div class="services__block-photo">
+                <img src="" alt="">
+            </div>
+        </div>
+        <div class="services__action">
+            <div class="services__action-text">
+                Help your client make a decision: Insert an inspirational phrase and add a CTA button!
+            </div>
+            <div class="services__action-button">
+                <a href="#">
+                    <button>Call to action</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="process__title">
+            How we work
+        </div>
+        <div class="process__cards-wrapper">
+            <div class="process__card">
+                <div class="process__number">1</div>
+                <div class="process__title">Let's start</div>
+                <div class="process__subtitle">Beginning: Describe the first step of your work or your client's first step to get the result</div>
+            </div>
+            <div class="process__card">
+                <div class="process__number">1</div>
+                <div class="process__title">Let's start</div>
+                <div class="process__subtitle">Beginning: Describe the first step of your work or your client's first step to get the result</div>
+            </div>
+            <div class="process__card">
+                <div class="process__number">1</div>
+                <div class="process__title">Let's start</div>
+                <div class="process__subtitle">Beginning: Describe the first step of your work or your client's first step to get the result</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <div class="benefits__text">
+            <div class="benefits__title">Why Choose Us?</div>
+            <div class="benefits__subtitle">We will provide you with the best services based on our significant industry experience.</div>
+        </div>
+        <div class="benefits__cards-wrapper">
+            <div class="benefits__card">
+                <img src="" alt="">
+                <div class="benefits__card-title">10 years of work</div>
+                <div class="benefits__card-subtitle">We have established ourselves as professionals in our field, working with both small and well-known brands.</div>
+            </div>
+            <div class="benefits__card">
+                <img src="" alt="">
+                <div class="benefits__card-title">10 years of work</div>
+                <div class="benefits__card-subtitle">We have established ourselves as professionals in our field, working with both small and well-known brands.</div>
+            </div>
+            <div class="benefits__card">
+                <img src="" alt="">
+                <div class="benefits__card-title">10 years of work</div>
+                <div class="benefits__card-subtitle">We have established ourselves as professionals in our field, working with both small and well-known brands.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__text">
+            <div class="contacts__title">Contacts</div>
+            <div class="contacts__number">
+                <a href="tel:+998339598877">+998 (33) 959-88-77</a>
+            </div>
+            <div class="contacts__mail">
+                <a href="mailto:#">info@auditservice.uz</a><br />
+            </div>
+            <div class="contacts__address">Audit Service, 99а проспект Амира Темура, Ташкент, Узбекистан</div>
+
+        </div>
+        <div class="contacts__map">
+            <div id="map" class="map__wrapper">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <div class="footer__logo logo">
+                
+            </div>
+            <div class="footer__copyright">
+                <p>© 2023 AuditService. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
