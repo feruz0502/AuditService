@@ -1,0 +1,23 @@
+.footer{
+    padding: 20px 0;
+    color: white;
+    background-color: $color-primary;
+    @include font(16px, 1rem, normal);
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    a{
+        display: flex;
+    }
+    // &__logo{
+    //     filter: grayscale(100%);
+    //     filter: contrast(0);
+    //     transition: all 0.5s linear;
+    //     &:hover{
+    //         filter: grayscale(0);
+    //         filter: contrast(100%);
+    //     }
+    // }
+}

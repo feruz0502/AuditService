@@ -1,0 +1,41 @@
+.process{
+    padding: 160px 0;
+    margin: 0 auto;
+    color: black;
+    &__cards-wrapper{
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+    }
+    &__title{
+        @include font(42px, 1.23, 600);
+        padding-bottom: 100px;
+        // max-width: 760px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__text{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    &__card{
+        max-width: 350px;
+        &-checkmark{
+            // @include font(22px, 1.3, 600);
+            width: 35px;
+            height: 35px;
+            fill:$color-accent;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center
+        }
+        &-title{
+            @include font(24px, 1.3, 600);
+        }
+        &-subtitle{
+            @include font(16px, 1.5, 300);
+            margin-top: 15px;
+        }
+    }
+}

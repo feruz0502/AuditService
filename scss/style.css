@@ -9944,8 +9944,8 @@ img {
 
 .header {
   width: 100%;
-  margin: 10px 0;
-  background-color: #ffffff;
+  padding: 10px 0;
+  background-color: #203563;
 }
 .header__wrapper {
   position: relative;
@@ -9986,11 +9986,11 @@ img {
   cursor: pointer;
   font-size: 1.6rem;
   line-height: 1rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 .header .navigation__link {
   position: relative;
-  color: #203563;
+  color: #ffffff;
   text-decoration: none;
   height: auto;
   padding-bottom: 0.5rem;
@@ -10000,7 +10000,7 @@ img {
   content: " ";
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   width: 0%;
   height: 1.5px;
   transition: 0.3s ease-out;
@@ -10008,17 +10008,18 @@ img {
 }
 .header .navigation__link:hover::after {
   width: 100%;
+  left: 0;
 }
 .header__right {
   display: flex;
   font-size: 1.6rem;
   line-height: 1rem;
   font-weight: normal;
-  color: #203563;
+  color: #ffffff;
   gap: 20px;
 }
 .header__right a {
-  color: #203563;
+  color: #ffffff;
   transition: 0.3s linear;
 }
 .header__right a:hover {
@@ -10085,11 +10086,29 @@ img {
   opacity: 1;
 }
 
+.footer {
+  padding: 20px 0;
+  color: white;
+  background-color: #203563;
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: normal;
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer a {
+  display: flex;
+}
+
 .home {
   background: no-repeat, center, center url(../assets/images/Depositphotos_297906.jpg);
+  background-size: cover;
   color: white;
   width: 100%;
-  height: 80%;
+  height: 90%;
 }
 .home__filter {
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
@@ -10117,4 +10136,281 @@ img {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 300;
+}
+
+.about {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 180px 0;
+}
+.about__photo {
+  width: 50%;
+}
+.about__photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__content {
+  text-align: center;
+  width: 50%;
+}
+.about__content span {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: 3px;
+  background-color: #FF7401;
+}
+.about__title {
+  color: black;
+  font-size: 42px;
+  line-height: 1.23;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.about__subtitle {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+.about__text {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-top: 28px;
+  color: black;
+}
+
+.benefits {
+  background-color: #203563;
+  padding: 160px 0;
+  text-align: center;
+  color: white;
+}
+.benefits__text {
+  margin-bottom: 100px;
+}
+.benefits__title {
+  font-size: 42px;
+  line-height: 1.23;
+  font-weight: 600;
+  padding-bottom: 40px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.benefits__subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.benefits__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.benefits__card {
+  max-width: 360px;
+}
+.benefits__card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+}
+.benefits__card-title {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.benefits__card-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.contacts {
+  padding: 160px 0;
+}
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
+}
+.contacts__text {
+  width: 50%;
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.contacts__text a {
+  color: #000000;
+  transition: 0.3s linear;
+}
+.contacts__text a:hover {
+  color: #FF7401;
+}
+.contacts__title {
+  font-size: 28px;
+  line-height: 1.17;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.contacts__map {
+  width: 50%;
+}
+.contacts__socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+.contacts__socials path {
+  fill: #FF7401;
+}
+
+.map__wrapper {
+  width: 100%;
+  height: 400px;
+}
+
+.process {
+  padding: 160px 0;
+  margin: 0 auto;
+  color: black;
+}
+.process__cards-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.process__title {
+  font-size: 42px;
+  line-height: 1.23;
+  font-weight: 600;
+  padding-bottom: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.process__text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.process__card {
+  max-width: 350px;
+}
+.process__card-checkmark {
+  width: 35px;
+  height: 35px;
+  fill: #FF7401;
+}
+.process__card-title {
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+.process__card-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.services {
+  background-color: #203563;
+  padding: 160px 0;
+  color: white;
+}
+.services__wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+.services__title {
+  font-size: 52px;
+  line-height: 1.23;
+  font-weight: 600;
+  padding-bottom: 40px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.services__subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 300;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.services__block-wrapper {
+  padding: 120px 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+.services__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.services__block-photo {
+  width: 50%;
+  max-width: 600px;
+}
+.services__block-photo img {
+  display: block;
+}
+.services__block-text {
+  width: 50%;
+  text-align: left;
+  padding: 0 10px;
+}
+.services__block-text span {
+  display: inline-block;
+  max-width: 150px;
+  width: 100%;
+  height: 2px;
+  background-color: #FF7401;
+  margin: 10px 0 20px 0;
+}
+.services__block-title {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 600;
+  max-width: 500px;
+}
+.services__block-subtitle {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.services__action {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.services__action-text {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 300;
+  max-width: 560px;
+  text-align: inherit;
+}
+.services__action-button a {
+  display: flex;
+}
+.services__action-button button {
+  padding: 20px 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FF7401;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

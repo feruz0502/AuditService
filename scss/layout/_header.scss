@@ -1,7 +1,7 @@
 .header {
     width: 100%;
-    margin: 10px 0;
-    background-color: $color-white;
+    padding: 10px 0;
+    background-color: $color-primary;
     &__wrapper {
         // padding: 0 40px;
         position: relative;
@@ -35,7 +35,7 @@
     li {
         list-style: none;
         cursor: pointer;
-        @include font(1.6rem, 1rem, normal);
+        @include font(1.6rem, 1rem, 500);
         // a{
         //     // color: #ffffff;
         //     @include font(15px, 1rem, 300);
@@ -44,7 +44,7 @@
 
     .navigation__link {
         position: relative;
-        color: $color-primary;
+        color: $color-white;
         text-decoration: none;
         height: auto;
         padding-bottom: 0.5rem;
@@ -54,7 +54,7 @@
             content: " ";
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50%;
             width: 0%;
             height: 1.5px;
             transition: 0.3s ease-out;
@@ -63,16 +63,17 @@
         &:hover {
             &::after {
                 width: 100%;
+                left: 0;
             }
         }
     }
     &__right{
         display: flex;
         @include font(1.6rem,1rem, normal);
-        color: $color-primary;
+        color: $color-white;
         gap: 20px;
         a{
-            color: $color-primary;
+            color: $color-white;
             transition: 0.3s linear;
             &:hover{
                 color: $color-accent;

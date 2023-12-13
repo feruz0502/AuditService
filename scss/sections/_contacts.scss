@@ -1,0 +1,39 @@
+.contacts{
+    padding: 160px 0;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__text{
+        width: 50%;
+        color: black;
+        @include font(20px, 1.5, 300);
+        a{
+            color: $color-black;
+            transition: 0.3s linear;
+            &:hover{
+                color: $color-accent;
+            }
+        }
+    }
+    &__title{
+        @include font(28px, 1.17, 600);
+        margin-bottom: 30px;
+    }
+
+    &__map{
+        width: 50%;
+    }
+    &__socials{
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        path{
+            fill: $color-accent ;
+        }
+    }
+}
+.map__wrapper{
+    width: 100%;
+    height: 400px;
+}
